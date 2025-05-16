@@ -1,13 +1,10 @@
 #include <stdio.h>
 int main() {
-    int arr[] = {15, 20, 25, 45, 50};
-    int *ptr = arr;  
-    int size = sizeof(arr) / sizeof(arr[0]);
-    printf("Demonstrating pointer arithmetic:\n\n");
-    for (int i = 0; i < size; i++) {
-        printf("Address of arr[%d] = %p\t", i, (ptr + i));
-        printf("Value at *(ptr + %d) = %d\n", i, *(ptr + i));
+    int arr[10] = {1, 2, 3, 4, 5},i;
+    int *harsha = arr;  
+    for (int i = 0; i<5; i++) {
+        printf("%d",*harsha+i);
+        printf("%p",harsha+i);
     }
 
-    return 0;
 }
